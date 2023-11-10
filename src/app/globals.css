@@ -6,4 +6,12 @@
     .btn-primary {
         @apply bg-black text-white p-2 rounded-full px-5 shadow-2xl hover:bg-gray-400 duration-200
     }
+
+    .btn-secondary {
+        @apply bg-secondary p-2 rounded-full px-5 shadow-xl hover:bg-gray-400 duration-200
+    }
+
+    .form-element {
+        @apply p-2 rounded-lg w-full
+    }
 }

@@ -1,5 +1,6 @@
-import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faPhoenixFramework, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
@@ -46,25 +47,27 @@ export default function HeaderComponent() {
                     </div>
                 </div>
                 <div className="col-span-7 rounded-xl shadow-lg mt-10 relative">
-                    <img src="/images/header.jpg" alt="" className="rounded-xl opacity-80" />
+                    <img src="/images/header.jpg" alt="" className="rounded-xl opacity-90" />
 
                     <div className="contactCard absolute top-10 left-20 bg-white p-5 px-10 rounded-xl shadow-lg">
-                        <ul className="flex flex-1 gap-4 items-center" >
-                            <li>
-                                <FontAwesomeIcon icon={faUser} width={15} />
+                        <ul className="flex flex-col gap-4 items-center" >
+                            <li className="flex flex-1 items-center gap-2">
+                                <FontAwesomeIcon icon={faUser} width={15} />Uğur ATMACA
                             </li>
-                            <li>
-                                Emirhan Karadeniz
+                            <li className="flex flex-1 items-center gap-2" >
+                                 <FontAwesomeIcon icon={faPhone} width={15} /> 0545 357 7826
                             </li>
                         </ul>
                     </div>
                     <div className="contactCard absolute bottom-10 right-20 bg-white p-5 px-10 rounded-xl shadow-lg">
-                        <span>
-                            Emrhan KAradeniz
-                        </span>
-                        <span className="text-sm">
-                            0507 651 0758
-                        </span>
+                    <ul className="flex flex-col gap-4 items-center" >
+                            <li className="flex flex-1 items-center gap-2">
+                                <FontAwesomeIcon icon={faUser} width={15} />Mert ATMACA
+                            </li>
+                            <li className="flex flex-1 items-center gap-2" >
+                                 <FontAwesomeIcon icon={faPhone} width={15} /> 0537 645 0854
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

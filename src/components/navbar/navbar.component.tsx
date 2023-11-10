@@ -11,8 +11,10 @@ export default function NavbarComponent(){
             </div>
             <div className="col-span-6">
                 <ul className="flex flex-1 gap-10 justify-center" >
-                    <li>
-                        Anasayfa
+                    <li >
+                        <Link href="/" >
+                            Anasayfa
+                        </Link>
                     </li>
                     <li>
                         Hakkımızda
@@ -23,9 +25,9 @@ export default function NavbarComponent(){
                 </ul>
             </div>
             <div className="col-span-3 flex flex-1 items-end justify-end gap-5">
-                <button className="btn-primary">
+                <Link href="/reservation" className="btn-primary">
                     Rezervasyon
-                </button>
+                </Link>
             </div>
         </div>
     )
